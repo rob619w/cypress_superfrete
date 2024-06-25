@@ -29,7 +29,6 @@ let label_minienvios = ':nth-child(5) > .MuiPaper-elevation1 > .MuiAccordionSumm
 
 //*****TESTE*****/
 describe('Teste Funcional da Tela de Cálculo', () => {
-
     it('Deve calcular frete com desconto com sucesso e retornar informações de PAC, SEDEX e Mini Envio', () => 
     {
     cy.visit(BASE_URL)
@@ -45,7 +44,7 @@ describe('Teste Funcional da Tela de Cálculo', () => {
     cy.get(label_pac).should('contain', 'PAC')
     cy.get(label_sedex).should('contain', 'SEDEX')
     cy.get(label_minienvios).should('contain', 'Mini Envios')
-  })
+    })
     it('Ao tentar realizar o cálculo com o CEP de ORIGEM vazio, deve retornar uma mensagem de erro', () => 
     {
     cy.visit(BASE_URL)
@@ -60,8 +59,8 @@ describe('Teste Funcional da Tela de Cálculo', () => {
     cy.get(cep_origem_error_msg ).should('contain', 'CEP de origem é obrigatório')
     })
     it('Ao tentar realizar o cálculo com o CEP de DESTINO vazio, deve retornar uma mensagem de erro', () => 
-      {
-      cy.visit(BASE_URL)
+    {
+    cy.visit(BASE_URL)
     cy.get(cep_origem).type("08090-284")
     cy.get(peso).click()
     cy.get(peso_300g).click()
