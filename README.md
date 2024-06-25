@@ -1,9 +1,12 @@
 ﻿# cypress_superfrete
 
+
 **Teste Técnico SuperFrete - QA** 💻✅
 ----------------------------------
 
-Projeto com Testes Funcionais implementado via Cypress e escrito em JavaScript para tela de cálculo da SuperFrete (https://web.superfrete.com/#/calcular-correios)
+Projeto com Testes Funcionais implementado via Cypress e escrito em JavaScript para tela de cálculo da SuperFrete (https://web.superfrete.com/#/calcular-correios).
+
+Deve ser executado preferencialmente no navegador Electron devido ao 'Web Security Policy' do Google Chrome.
 
 
 Cenário de Sucesso 🟢
