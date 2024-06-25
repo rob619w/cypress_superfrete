@@ -1,5 +1,4 @@
 /// <reference types="Cypress"/>
-
 //*****VARIÁVEIS*****/
 //URL
 let BASE_URL = 'https://web.superfrete.com/'
