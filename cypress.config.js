@@ -2,6 +2,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   chromeWebSecurity: false,
+  projectId: 'mjf7cv',
 experimentalModifyObstructiveThirdPartyCode: true,
 hideXHR: true,
 video: true,
